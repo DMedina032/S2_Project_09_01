@@ -11,6 +11,7 @@
 
 */
 
+/* I gave the input, select, and textarea a psudeo class of focus so that it is active when the user clicks on itand gave them a background color. next I targeted all the id's and gave them a  psudeo class for valid and invalid seperatly.with diffeent colors and images so when the user types soething valid or invalid it will show them. */
 
 /* Validation Styles */
 input:focus,
@@ -30,9 +31,11 @@ textarea:focus {
 }
 
 
-#fnBox:focus:valid,
-#lnBox:focus:valid,
-#addBox:focus:valid,
-#mailBox:focus:valid,
-#phoneBox:focus:valid,
-#idBox:focus:valid {}
+#fnBox:focus:invalid,
+#lnBox:focus:invalid,
+#addBox:focus:invalid,
+#mailBox:focus:invalid,
+#phoneBox:focus:invalid,
+#idBox:focus:invalid {
+    background: url(cg_invalid.png) right no-repeat, rgb(255, 232, 232);
+}
